@@ -1,3 +1,19 @@
-create table movies_db (id int, movie_name varchar(20),actor_name varchar(20), media varchar(30), genre varchar(20), users_review varchar(500),artist_skills varchar(100), multirole_in_film varchar(200));
-insert into movies_db values (1, 'dasavatharam', 'kamalhasan', 'image', 'sci-fi', 'karthi: movie is stunning performance and nice play and very hard work', 'dancer,singer,director,editor','10 roles: nambi,flecture,govindrajan,kalifulla,avatar sing,bush,poovaragavan,grandma,palram naidu');
-insert into movies_db values (2, 'endhiran', 'rajinikanth', 'image', 'sci-fi', 'surya: movie is stunning performance and nice play and very hard work', 'dancer,singer,director','2 roles: dr.vashigaran,chitti the robot');
+show databases;
+
+create database imdb;
+
+show databases;
+
+use imdb;
+
+create table movies_imdb (id int, movie_name varchar(20),actor_name varchar(20), media varchar(30), genre varchar(20), users_review varchar(500),artist_skills varchar(100), multirole_in_this_film varchar(200));
+
+insert into movies_imdb values (1, 'engal veetu pillai', 'MGR', 'image', 'drama/family', 'surya: All time mega blockbusters of Tamil cinema.MGR at his best in double role.Songs are evergreen classics.Nagesh comedy scenes are most funniest scenes in film.Power packed script with excellent direction.The movie is one of best films among best 100 films in Tamil cinema', 'dancer,real stuntmen,politician,director','2 roles: ilango,ramu');
+insert into movies_imdb values (2, 'navarathri', 'SIVAJI', 'image', 'drama', 'ganesh: being the 100th film  of mr sivaji ganesan what a brilliant n excellent performance is sivaji would hv been on holly wood he would hv recd at least 9 oscars sanjeev kumar is the greatest actor of all time in the hindi film industry himself admitted that no one can match sivaji ganesan in acting n talent ashe is a world class actor as told with tabassum in phool khile hain gulshan gulshan prog on the year 1974 197', 'dancer,producer,politician,lead actor','9 roles: sathyavan singaram, the drunkard, karunagaran,dr.arputharaj, the hunter,police,gunmen,the villager,anand,the leper');
+insert into movies_imdb values (3, 'dasavatharam', 'KAMALHASAN', 'image', 'sci-fi', 'karthi: A brave Experiment !! Doing 10 different characters by a single person.. Only an Expert in acting can do...Kamal Haasan has done it by his authenticated acting and his script !! Apart from this, the main Hero is the Story itself. Movies nowadays comes with soul less stories or no story.  A mile stone in Indian and Tamil Cinema !!!', 'dancer,singer,director,editor','10 roles: nambi,flecture,govindrajan,kalifulla,avatar sing,bush,poovaragavan,grandma,palram naidu');
+insert into movies_imdb values (4, 'endhiran', 'rajinikanth', 'image', 'sci-fi', 'surya: Sheer brilliance! A movie that is way ahead of its time but still managed to become a blockbuster. Marvelous making! Hats off to the writer - Sujatha sir, director - Shankar n of course Thalaivar Rajinikanth!!! Loved it!! Highly far-sighted. 💖🤩🤘', 'dancer,singer,director','2 roles: dr.vashigaran,chitti the robot');
+insert into movies_imdb values (5, 'anniyan', 'vikram', 'image', 'thriller/action', 'jegan: One of my favourite flim... And this is the chiyaan and shankar carrier best flim. Chiyaan acting is superb in this, Fight, Songs, Bgm, are also amazing.Actress sadha done a good job.Peter hein got flimfare award for his work in this flim, so many awards in 2005 got this movie including best actor, music director etc... This is one of the very best flim in kollywood', 'dancer,singer,dubbing artist,body building','3 roles: ambi,remo,anniyan');
+insert into movies_imdb values (6, 'mersal', 'vijay', 'image', 'sci-fi', 'deva: Hatrick vetri Atlee sir great movie .Vijay sir SEMA MASS - Mersal is Mersal ....Nice and realistic message . people hater pls dont degrate the movie seriously its nice worth of watching ..even thou am a fan of Ajith and Simbu this mesral seriously Mersal... happy to see Tamil cinema industry going on next level and telling us real truth and motivating people to be aware of this society.', 'dancer,singer,actor','3 roles: vetri,maran,vetrimaran');
+insert into movies_imdb values (7, 'billa', 'ajith', 'image', 'sci-fi', 'kumar:The movie was good. Ajith acted very stylish in the movie. Songs and BGM were also good in the movie. Fight scenes in the movie were fantastic in the movie.', 'dancer,car racer,actor','2 roles: velu,billa');
+
+select * from movies_imdb;
